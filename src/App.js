@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Content from './Content';
+import Header from './Header';
+import Footer from './Footer';
 
 function App() {
   return (
     //Ex 2 - Add div to display hello world and date
     <div>
-      <h1>Hello World!</h1>
-      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+      <Content></Content>
+      <Header></Header>
+      <Footer></Footer>
     </div>
   );
 }
