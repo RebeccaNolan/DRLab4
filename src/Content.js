@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Being called from App.js to the home page
 const Content = () => {
   return (
     <div>
