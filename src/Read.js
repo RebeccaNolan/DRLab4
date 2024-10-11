@@ -28,7 +28,7 @@ const Read = () => {
     return (
         <div>
             <h3>Hello from read</h3>
-            <Movies movieDisp={data}/> 
+            <Movies movieDisp={data  /*Movie data passed to movies component*/}/>
         </div>
     );
 }

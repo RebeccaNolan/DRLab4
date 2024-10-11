@@ -6,6 +6,7 @@ import Footer from './Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationBar from './Navbar';
 import Read from './Read';
+import Create from './Create';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Content/>} /> 
         <Route path="/read" element={<Read/>} />
-        <Route path="/create" element={<Header/>} />
+        <Route path="/create" element={<Create/>} />
         
       </Routes>
     </Router>

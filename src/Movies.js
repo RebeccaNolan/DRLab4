@@ -1,10 +1,11 @@
-//pass data from parent to child
-const Movies = (props)=> {
-    return (
-        <div>
-            movies component
-            {console.log(props.movieDisp)} 
-        </div>
+
+import MovieItem from "./MovieItem";
+
+const Movies = (props)=> { /*props passes data from parent to child*/
+    return props.movieDisp.map(
+        (movie)=> {
+            return <MovieItem myMovie = {movie} key={movie.imdbID}/> 
+        }
     );
 }
 
