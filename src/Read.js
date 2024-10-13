@@ -1,7 +1,7 @@
 import Movies from "./Movies"; //import movies
 
-const Read = () => {
-    const data = [
+const Read = () => { //read componenet
+    const data = [ //data array with movie info
         {
             "Title": "Avengers: Infinity War",
             "Year": "2018",
@@ -28,9 +28,9 @@ const Read = () => {
     return (
         <div>
             <h3>Hello from read</h3>
-            <Movies movieDisp={data  /*Movie data passed to movies component*/}/>
+            <Movies movieDisp={data  /*Movie data passed to movies component as a prop*/}/>
         </div>
     );
 }
 
-export default Read;
+export default Read; //export read component
