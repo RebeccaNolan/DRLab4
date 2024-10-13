@@ -1,11 +1,11 @@
-import { useEffect } from "react";
-import Card  from "react-bootstrap/Card";
+import { useEffect } from "react"; //useEffect hook
+import Card  from "react-bootstrap/Card"; //card component import 
 
-const movieItem = (props)=>{
+const movieItem = (props)=>{ //movieItem, takes props as input
     //useEffect();
     return (
         /*Bootstrap cards imported and used
-        to display movies*/
+        to display Title, Poster and year*/
         <div>
             <Card>
                 <Card.Header>{props.myMovie.Title}</Card.Header>
@@ -20,4 +20,4 @@ const movieItem = (props)=>{
     );
 }
 
-export default movieItem;
+export default movieItem; //export movieItem component
